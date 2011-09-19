@@ -1,0 +1,59 @@
+# #############################################################################
+#
+# Copyright (c) 2003-2004 Zope Foundation and Contributors.
+# All Rights Reserved.
+#
+# This software is subject to the provisions of the Zope Public License,
+# Version 2.1 (ZPL).  A copy of the ZPL should accompany this distribution.
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED
+# WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
+# FOR A PARTICULAR PURPOSE.
+#
+# #############################################################################
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"POT-Creation-Date: Sun Aug 14 11:35:54 2011\n"
+"PO-Revision-Date: 2011-08-14 12:01+0200\n"
+"Last-Translator: Serge Renfer <serge.renfer@gmail.com>\n"
+"Language-Team: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: zope/app/locales/extract.py\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ageliaco.tracker:/behavior/behaviors.py:27
+msgid "Contributeurs"
+msgstr ""
+
+#: ageliaco.tracker:/content/issue.py:102
+msgid "Responsable"
+msgstr ""
+
+#: ageliaco.tracker:/content/issue.py:103
+msgid "Personne qui supervise cette tâche"
+msgstr ""
+
+#: ageliaco.tracker:/content/issue.py:110
+msgid "Présentation"
+msgstr ""
+
+#: ageliaco.tracker:/content/issue.py:111
+msgid "Description de la tâche"
+msgstr ""
+
+#: ageliaco.tracker:/content/issue.py:35
+#: ageliaco.tracker:/content/tracker.py:37
+msgid "Choisir un autre superviseur secondaire ou primaire!"
+msgstr ""
+
+#: ageliaco.tracker:/content/tracker.py:135
+msgid "Content"
+msgstr ""
+
+#. Default: "Sub-trackers"
+#: ageliaco.tracker:/content/tracker_templates/view.pt:90
+msgid "heading_subtrackers"
+msgstr "Sous-domaines"

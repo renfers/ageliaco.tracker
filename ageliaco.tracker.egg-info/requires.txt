@@ -1,0 +1,8 @@
+setuptools
+plone.app.dexterity
+collective.autopermission
+Plone
+plone.principalsource
+collective.wtf
+Products.AdvancedQuery
+collective.gtags

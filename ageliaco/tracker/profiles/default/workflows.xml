@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<object name="portal-workflow">
+    <bindings>
+        <type type_id="tracker">
+            <bound-workflow workflow_id="ageliaco.tracker.tracker_workflow"/>
+        </type>
+        <type type_id="issue">
+            <bound-workflow workflow_id="ageliaco.tracker.issue_workflow"/>
+        </type>
+    </bindings>
+</object>

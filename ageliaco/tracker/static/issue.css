@@ -1,0 +1,297 @@
+/* root element for tabs  */
+.tabs { 
+	list-style:none; 
+	margin:0; 
+	padding:0;
+	height:30px;
+	border-bottom:1px solid #CCC;	
+	margin-bottom: 1em;
+}
+
+/* single tab */
+.tabs li { 
+	float:left;	 
+	text-indent:0;
+	padding:0;
+	margin:0;
+	list-style-image:none; 
+	list-style:none;
+}
+
+/* link inside the tab. uses a background image */
+.tabs a { 
+	background: #EEC url(blue.png) no-repeat -652px 0;
+	font-size:11px;
+	display:block;
+	height: 30px;  
+	line-height:30px;
+	width: 111px;
+	text-align:center;	
+	text-decoration:none;
+	color:#000;
+	padding:0px;
+	margin:0px;	
+	position:relative;
+	top:1px;
+	border-bottom:0.1em solid #ccc;	
+	border-top:0.1em solid #ccc;	
+	border-right:0.1em solid #ccc;	
+}
+
+.tabs a:active {
+	outline:none;	
+	background : #EFE;
+	border-bottom:0em solid #ccc;	
+
+}
+
+/* when mouse enters the tab move the background image */
+.tabs a:hover {
+	background-position: -652px -31px;	
+	color:#fff;	
+	background : #FFE;
+}
+
+.tabs li a.current {
+	background : #FFF;
+	border-top:1px solid #666;	
+	border-left:1px solid #666;	
+	border-right:1px solid #666;	
+	border-bottom:0px;	
+	
+}
+
+
+/* active tab uses a class name "current". it's highlight is also done by moving the background image. */
+.tabs .current, .tabs .current:hover, .tabs li.current a {
+	background-position: -652px -62px;		
+	cursor:default; 
+	color:#000;
+	background : #FFE;
+}
+
+/* Different widths for tabs: use a class name: w1, w2, w3 or w2 */
+
+
+/* width 1 */
+.tabs .w1 			{ background-position: -519px 0; width:134px; }
+.tabs .w1:hover 	{ background-position: -519px -31px; }
+.tabs .w1.current { background-position: -519px -62px; }
+
+/* width 2 */
+.tabs .w2 			{ background-position: -366px -0px; width:154px; }
+.tabs .w2:hover 	{ background-position: -366px -31px; }
+.tabs .w2.current { background-position: -366px -62px; }
+
+
+/* width 3 */
+.tabs .w3 			{ background-position: -193px -0px; width:174px; }
+.tabs .w3:hover 	{ background-position: -193px -31px; }
+.tabs .w3.current { background-position: -193px -62px; }
+
+/* width 4 */
+.tabs .w4 			{ background-position: -0px -0px; width:194px; }
+.tabs .w4:hover 	{ background-position: -0px -31px; }
+.tabs .w4.current { background-position: -0px -62px; }
+
+
+/* initially all panes are hidden */ 
+.panes .pane {
+	display:none;		
+}
+
+/* tab pane styling  */
+.panes div {
+	padding:1px;
+	font-size:12px;
+	background:#FFF;
+	line-height: 1.30em;
+} 
+
+
+#content-core {
+  background : #EEC;
+  color   : brown;
+  padding : 3px;
+}
+
+#issues  {
+  color   : black;
+}
+
+.issue_odd {
+  background : #FFFFC1
+	margin:0; 
+	padding:0;
+}
+
+.issue_even {
+  background : #FFFFFF
+	margin:0; 
+	padding:0;
+}
+
+#all_issues dl{ 
+	margin: 0 0 0 0; 
+	padding:1px;
+}
+
+.opened-issue {
+  background : red
+}
+.draft-issue {
+  background : yellow
+}
+.closed-issue {
+  background : green
+}
+.completed-issue {
+  background : #22FF22;
+}
+.all-issue {
+  background : white
+}
+.pending-issue {
+  background : orange
+}
+
+
+/*
+#subtrackers dl
+{
+	margin: 0 0;
+	padding: 0;
+	width: 20em;
+}
+*/
+
+
+.issues dt
+{
+	margin: 0 0 0 1px;
+	background-color: #131210;
+	color: #959289;
+	font-weight: bold;
+	text-align: left;
+	text-transform: uppercase;
+	width: 25em;
+	float:left;	 
+    clear : left;
+    padding-left : 1px;
+
+
+}
+.overdated
+{
+    color : red;
+    padding-left : 3px;
+    padding-right: 3px;
+    margin-left : 3px;
+    margin-right: 3px;
+    width: 8em;
+	border-top:1px transparent;	
+	border-left:1px solid #DDD;	
+	border-bottom:1px solid #AAA;	
+	border-right:1px solid #AAA;	
+}
+
+.underdated
+{
+    color : black;
+    padding-left : 3px;
+    padding-right: 3px;
+    margin-left : 3px;
+    margin-right: 3px;
+    width: 8em;
+	border-top:1px solid #DDD;	
+	border-left:1px solid #DDD;	
+	border-bottom:1px solid #AAA;	
+	border-right:1px solid #AAA;	
+}
+
+/* dl dt dd */ 
+.issues dd, .issues div
+{
+	margin: 0 0 0 1px;
+	background: #DBD8D8;
+	text-align: left;
+	font-style: italic;
+	float:left;	 
+    padding : 1px 0 0 0;
+}
+
+
+#subtracker-issues div {
+    margin: 0 0 0 1px;
+    clear : left;
+}
+
+#local-issues dd {
+    margin: 0 0 0 1px;
+}
+
+#subtracker dd dt {
+    margin: 0 0 0 1px;
+    padding : 1px;
+	float:left;	 
+}
+
+
+
+dt.opened
+{
+	background: #FF8888;
+}
+dt.draft
+{
+	background: #FFFFC1;
+}
+dt.closed-issue
+{
+	background: grey;
+}
+dt.pending
+{
+	background: orange;
+}
+dt.completed
+{
+  background : #CCFFCC;
+}
+
+
+.draft
+{
+    margin: 0 0 0 0;
+}
+
+.panes
+{
+	display:block;
+	margin-top: 1em;
+
+}
+
+#subtrackers dd {
+    margin-left: 1px;
+	float:left;	 
+    padding : 1px;
+}
+#subtrackers ul {
+    margin-left: 1px;
+	float:left;	 
+    padding : 1px;
+	border-bottom:0px;	
+}
+
+#local_issues dd{
+    float: left;
+    margin-left: 1px;
+    padding: 1px;
+}
+#local_issues ul{
+    float: left;
+    margin-left: 1px;
+    padding: 1px;
+	border-bottom:0px;	
+}

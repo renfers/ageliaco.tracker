@@ -1,0 +1,26 @@
+Metadata-Version: 1.0
+Name: ageliaco.tracker
+Version: 0.1a1
+Summary: Issue tracker
+Home-page: http://svn.plone.org/svn/collective/
+Author: Serge Renfer
+Author-email: serge.renfer@gmail.com
+License: GPL
+Description: Introduction
+        ============
+        
+        Generic Issue Tracker
+        
+        This product may contain traces of nuts.
+        
+        Changelog
+        =========
+        
+        0.1dev (unreleased)
+        -------------------
+        
+        - Initial release
+        
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Programming Language :: Python
