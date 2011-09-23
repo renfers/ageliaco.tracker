@@ -1,7 +1,9 @@
 from setuptools import setup, find_packages
 import os
+#from setuptools.command import sdist
+#del sdist.finders[:]
 
-version = '0.1.3'
+version = '0.1.8'
 
 setup(name='ageliaco.tracker',
       version=version,
