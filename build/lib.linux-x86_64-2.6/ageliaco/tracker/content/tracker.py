@@ -119,7 +119,7 @@ class KeywordsVocabulary(object):
         items = [SimpleTerm(i, i, i) for i in index._index]
         return SimpleVocabulary(items)
 
-grok.global_utility(KeywordsVocabulary, name=u"example.conference.Subjects")
+grok.global_utility(KeywordsVocabulary, name=u"ageliaco.rd.tracker.Subjects")
 
 
         
@@ -203,6 +203,8 @@ class View(grok.View):
         """
         
         context = aq_inner(self.context)
+        log("context : " + str(context))
+        log("self.context : " + str(self.context))
         catalog = getToolByName(context, 'portal_catalog')
         log( "context's physical path : " + '/'.join(context.getPhysicalPath()))
         log(wf_state + " state chosen")

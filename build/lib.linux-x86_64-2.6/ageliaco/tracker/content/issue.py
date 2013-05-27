@@ -82,6 +82,11 @@ class getUserWithRole(object):
         log("context : " + context.__name__ + " parent : " + parent.__name__)
         users_roles = context.get_local_roles()
         users_with_the_role = [x[0] for x in users_roles if self.role_name in x[1]]
+        while parent.Type() == "Tracker":
+            parent_users_roles = parent.get_local_roles()
+            parent_users_with_the_role = [x[0] for x in parent_users_roles if self.role_name in x[1]]
+            users_with_the_role += parent_users_with_the_role
+            parent = parent.aq_parent
         
         terms = []
         terms.append(SimpleVocabulary.createTerm('', str(''), ''))
@@ -167,8 +172,8 @@ def setReviewer(issue, event):
 
 @indexer(IIssue)
 def deadlineIndexer(obj):
-    if obj.end is None:
-        return None
+    #if obj.end is None:
+    #    return None
     return DateTime(obj.deadline.isoformat())
 grok.global_adapter(deadlineIndexer, name="deadline")
 
