@@ -3,7 +3,7 @@ import os
 #from setuptools.command import sdist
 #del sdist.finders[:]
 
-version = '0.1.8'
+version = '0.1.9'
 
 setup(name='ageliaco.tracker',
       version=version,
@@ -27,7 +27,7 @@ setup(name='ageliaco.tracker',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'plone.app.dexterity',
+          'plone.app.dexterity [grok,relations]',
           'collective.autopermission',
           # -*- Extra requirements: -*-
           'Plone',

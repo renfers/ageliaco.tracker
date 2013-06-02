@@ -18,7 +18,7 @@ from Products.CMFPlone.utils import log
 
 from ageliaco.tracker import _
 
-from ageliaco.tracker.content.issue import IIssue
+from ageliaco.tracker.issue import IIssue
 import datetime
 
 from zope.schema.interfaces import IContextSourceBinder

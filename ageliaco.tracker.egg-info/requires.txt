@@ -1,5 +1,5 @@
 setuptools
-plone.app.dexterity
+plone.app.dexterity [grok,relations]
 collective.autopermission
 Plone
 plone.principalsource

@@ -21,7 +21,7 @@
  </property>
  <property name="default_view_fallback">False</property>
  <property name="add_permission">cmf.AddPortalContent</property>
- <property name="schema">ageliaco.tracker.content.tracker.ITracker</property>
+ <property name="schema">ageliaco.tracker.tracker.ITracker</property>
  <property name="klass">plone.dexterity.content.Container</property>
  <property name="behaviors">
   <element value="plone.app.dexterity.behaviors.metadata.IDublinCore"/>

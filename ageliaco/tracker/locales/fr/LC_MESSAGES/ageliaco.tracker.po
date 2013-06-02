@@ -28,32 +28,32 @@ msgstr ""
 msgid "Contributeurs"
 msgstr ""
 
-#: ageliaco.tracker:/content/issue.py:102
+#: ageliaco.tracker:/issue.py:102
 msgid "Responsable"
 msgstr ""
 
-#: ageliaco.tracker:/content/issue.py:103
+#: ageliaco.tracker:/issue.py:103
 msgid "Personne qui supervise cette tâche"
 msgstr ""
 
-#: ageliaco.tracker:/content/issue.py:110
+#: ageliaco.tracker:/issue.py:110
 msgid "Présentation"
 msgstr ""
 
-#: ageliaco.tracker:/content/issue.py:111
+#: ageliaco.tracker:/issue.py:111
 msgid "Description de la tâche"
 msgstr ""
 
-#: ageliaco.tracker:/content/issue.py:35
-#: ageliaco.tracker:/content/tracker.py:37
+#: ageliaco.tracker:/issue.py:35
+#: ageliaco.tracker:/tracker.py:37
 msgid "Choisir un autre superviseur secondaire ou primaire!"
 msgstr ""
 
-#: ageliaco.tracker:/content/tracker.py:135
+#: ageliaco.tracker:/tracker.py:135
 msgid "Content"
 msgstr ""
 
 #. Default: "Sub-trackers"
-#: ageliaco.tracker:/content/tracker_templates/view.pt:90
+#: ageliaco.tracker:/tracker_templates/view.pt:90
 msgid "heading_subtrackers"
 msgstr "Sous-domaines"

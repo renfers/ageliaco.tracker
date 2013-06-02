@@ -30,7 +30,7 @@
   <element
      value="plone.app.dexterity.behaviors.nextprevious.INextPreviousEnabled"/>
  </property>
- <property name="schema">ageliaco.tracker.content.issue.IIssue</property>
+ <property name="schema">ageliaco.tracker.issue.IIssue</property>
  <!--<property
     name="model_source">&lt;model xmlns="http://namespaces.plone.org/supermodel/schema"&gt;
     &lt;schema&gt;

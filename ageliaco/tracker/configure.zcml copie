@@ -6,6 +6,9 @@
   <!-- configure your content components here -->
 
   <!-- -*- extra stuff goes here -*- -->
+    <browser:resourceDirectory
+      name="ageliaco.tracker"
+      directory="static" />
 
 </configure>
 
